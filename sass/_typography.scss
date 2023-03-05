@@ -1,0 +1,77 @@
+%heading {
+    font-family: $font-display;
+    font-weight: 400;
+}
+
+.heading-1 {
+    @extend %heading;
+    font-size: 6rem;
+    color: $color-light-gray;
+    line-height: 1;
+}
+.heading-2 {
+    @extend %heading;
+    font-size: 4rem;
+    font-style: italic;
+    &--light {
+        color: $color-cream;
+    }
+    &--dark {
+        color: $color-dark-forest-green;
+    }
+}
+.heading-3 {
+    @extend %heading;
+    font-size: 2.5rem;
+    color: $color-pale-yellow;
+    text-transform: uppercase;
+    &--dark {
+        color: orange;
+    }
+}
+
+.heading-4 {
+    @extend %heading;
+    font-size: 2.1rem;
+    &--light {
+        color: $color-cream;
+    }
+    &--dark {
+        color: $color-dark-forest-green;
+    }
+}
+
+.btn {
+    background-color: $color-emerald-green-2;
+    color: $color-white;
+    border: none;
+    border-radius: 0;
+    font-family: $font-display;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    padding: 2rem 3rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+        background-color: $color-emerald-green;
+    }
+    &:active {
+        transform: translateY(3px);
+    }
+}
+
+.mb-sm {
+    margin-bottom: 2rem;
+}
+
+.mb-md {
+    margin-bottom: 3rem;
+}
+
+.mb-lg {
+    margin-bottom: 4rem;
+}
+
+.mb-hg {
+    margin-bottom: 8rem;
+}
